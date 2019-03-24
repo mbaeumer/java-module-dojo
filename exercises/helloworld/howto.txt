@@ -1,0 +1,8 @@
+1. Compile
+javac -d out <path-to-Helloworld> <path-to-module-info.java>
+
+2. Create jar
+jar cfe <path-to-module-jar> <class-name-including-package> -C <path-to-compiled-source> .
+
+3. Run module
+jave --module-path <path-to-module> -module <module-name>
