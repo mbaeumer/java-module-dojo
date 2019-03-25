@@ -1,0 +1,9 @@
+1. Compile
+javac -d out --module-source-path src/ -m jokeapp.cli
+
+2. create jar files
+jar -cf mods/jokeapp-backend.jar -C out/jokeapp.backend/ .
+jar -cfe mods/jokeapp-cli.jar -C out/jokeapp.cli/ .
+
+3. Running
+java -p mods -m jokeapp.cli

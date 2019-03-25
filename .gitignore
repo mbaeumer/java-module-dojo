@@ -25,4 +25,6 @@ mods/
 *.iml
 *.iws
 *.ipr
+
 atlassian-ide-plugin.xml
+.DS_Store
