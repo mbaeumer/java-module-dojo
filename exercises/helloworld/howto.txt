@@ -1,8 +1,9 @@
 1. Compile
-javac -d out <path-to-Helloworld> <path-to-module-info.java>
-
+javac -d out/<module-name> <path-to-Helloworld> <path-to-module-info.java>
+or
+javac -d out --module-source-path src -m <main-module>
 2. Create jar
-jar cfe <path-to-module-jar> <class-name-including-package> -C <path-to-compiled-source> .
+jar -cfe <path-to-module-jar> <class-name-including-package> -C <path-to-main-module> .
 
 3. Run module
-jave --module-path <path-to-module> -module <module-name>
+java --module-path <path-to-module> -module <module-name>/<main-class>

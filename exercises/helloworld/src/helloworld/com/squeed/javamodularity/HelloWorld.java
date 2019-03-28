@@ -1,6 +1,6 @@
-package com.squeed.javamodularity.helloworld; 
+package com.squeed.javamodularity; 
 
-public class Helloworld{ 
+public class HelloWorld{ 
   public static void  main (String ... args){ 
     System.out.println("Hello Modular World!" ); 
   } 

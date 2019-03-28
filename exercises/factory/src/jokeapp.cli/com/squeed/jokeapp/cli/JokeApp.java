@@ -8,9 +8,9 @@ public class JokeApp {
         System.out.println("This is the joke app");
 
         AbstractJokeService abstractJokeService = JokeServiceFactory.getJokeService("chuck");
-        abstractJokeService.getRandomJoke();
+        System.out.println(abstractJokeService.getRandomJoke());
 
         abstractJokeService = JokeServiceFactory.getJokeService("got");
-        abstractJokeService.getRandomJoke();
+        System.out.println(abstractJokeService.getRandomJoke());
     }
 }
