@@ -1,0 +1,10 @@
+1. Compile all at once
+javac -d out --module-source-path src $(find src -name '*.java')
+
+2. Create jar files
+jar -cf mods/jokeapp-chuck.jar -C out/jokeapp.chucknorris .
+...
+jar -cfe mods/jokeapp-cli.jar com.squeed.jokeapp.cli.JokeApp -C out/jokeapp.cli .
+
+3. Running
+java -p mods -m jokeapp.cli

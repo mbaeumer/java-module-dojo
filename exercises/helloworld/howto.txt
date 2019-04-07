@@ -1,9 +1,10 @@
 1. Compile
 javac -d out/<module-name> <path-to-Helloworld> <path-to-module-info.java>
 or
-javac -d out --module-source-path src -m <main-module>
+javac -d out --module-source-path src -m helloworld
+
 2. Create jar
-jar -cfe <path-to-module-jar> <class-name-including-package> -C <path-to-main-module> .
+jar -cfe mods/helloworld.jar com.squeed... -C src/helloworld .
 
 3. Run module
-java --module-path <path-to-module> -module <module-name>/<main-class>
+java --module-path mods -module helloworld
