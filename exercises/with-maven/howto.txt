@@ -1,0 +1,16 @@
+Add exec plugin
+
+./mvnw clean install
+
+To run:
+
+cd jokeapp.cli
+mvn exec:exec
+
+or 
+
+java -p <copy content of target/modulepath> -m jokeapp.cli
+
+No support in jar-plugin to set main class attribute yet!
+
+
