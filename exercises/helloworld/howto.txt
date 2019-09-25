@@ -7,4 +7,6 @@ javac -d out --module-source-path src -m helloworld
 jar -cfe mods/helloworld.jar com.squeed... -C src/helloworld .
 
 3. Run module
-java --module-path mods -module helloworld
+java --module-path <path-to-module> -module <module-name>/<main-class>
+
+dummy comment
