@@ -7,3 +7,5 @@ jar -cfe <path-to-module-jar> <class-name-including-package> -C <path-to-main-mo
 
 3. Run module
 java --module-path <path-to-module> -module <module-name>/<main-class>
+
+dummy comment
